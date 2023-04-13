@@ -6,16 +6,33 @@
 //
 
 import SwiftUI
+import SwiftSpeech
+
+//Privacy - Microphone Usage Description
+//Privacy - Speech Recognition Usage Description
 
 struct ContentView: View {
+    
+    @State var text: String = ""
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack{
+            
+            TextField("", text: $text)
+            
+            Button {
+                
+            } label: {
+                Image("micro")
+            }
+            .swiftSpeechRecordOnHold(sessionConfiguration: SwiftSpeech.Session.Configuration(locale: Locale(identifier: "Ru-ru")))
+            .onRecognizeLatest(update: $text)
+
+            
+            
+        }.onAppear {
+            SwiftSpeech.requestSpeechRecognitionAuthorization()
         }
-        .padding()
     }
 }
 

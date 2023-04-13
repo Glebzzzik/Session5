@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4145C01229E87F05009EE45C /* ActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 4145C01129E87F05009EE45C /* ActivityIndicatorView */; };
+		4145C01529E87F21009EE45C /* SwiftSpeech in Frameworks */ = {isa = PBXBuildFile; productRef = 4145C01429E87F21009EE45C /* SwiftSpeech */; };
+		4145C01729E88109009EE45C /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4145C01629E88109009EE45C /* Activity.swift */; };
 		41BDB70B29E7C4A700CF090A /* ghjkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BDB70A29E7C4A700CF090A /* ghjkApp.swift */; };
 		41BDB70D29E7C4A700CF090A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BDB70C29E7C4A700CF090A /* ContentView.swift */; };
 		41BDB70F29E7C4A800CF090A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41BDB70E29E7C4A800CF090A /* Assets.xcassets */; };
 		41BDB71229E7C4A800CF090A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41BDB71129E7C4A800CF090A /* Preview Assets.xcassets */; };
+		41BDB73E29E7CAE300CF090A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 41BDB73D29E7CAE300CF090A /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4145C01629E88109009EE45C /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		41BDB70729E7C4A700CF090A /* ghjk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ghjk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41BDB70A29E7C4A700CF090A /* ghjkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ghjkApp.swift; sourceTree = "<group>"; };
 		41BDB70C29E7C4A700CF090A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		41BDB70E29E7C4A800CF090A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41BDB71129E7C4A800CF090A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		41BDB71A29E7C56900CF090A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +32,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4145C01229E87F05009EE45C /* ActivityIndicatorView in Frameworks */,
+				4145C01529E87F21009EE45C /* SwiftSpeech in Frameworks */,
+				41BDB73E29E7CAE300CF090A /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +60,8 @@
 		41BDB70929E7C4A700CF090A /* ghjk */ = {
 			isa = PBXGroup;
 			children = (
+				41BDB71A29E7C56900CF090A /* Info.plist */,
+				4145C01629E88109009EE45C /* Activity.swift */,
 				41BDB70A29E7C4A700CF090A /* ghjkApp.swift */,
 				41BDB70C29E7C4A700CF090A /* ContentView.swift */,
 				41BDB70E29E7C4A800CF090A /* Assets.xcassets */,
@@ -83,6 +94,11 @@
 			dependencies = (
 			);
 			name = ghjk;
+			packageProductDependencies = (
+				41BDB73D29E7CAE300CF090A /* SDWebImageSwiftUI */,
+				4145C01129E87F05009EE45C /* ActivityIndicatorView */,
+				4145C01429E87F21009EE45C /* SwiftSpeech */,
+			);
 			productName = ghjk;
 			productReference = 41BDB70729E7C4A700CF090A /* ghjk.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +127,11 @@
 				Base,
 			);
 			mainGroup = 41BDB6FE29E7C4A700CF090A;
+			packageReferences = (
+				41BDB73C29E7CAE300CF090A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				4145C01029E87F05009EE45C /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */,
+				4145C01329E87F21009EE45C /* XCRemoteSwiftPackageReference "SwiftSpeech" */,
+			);
 			productRefGroup = 41BDB70829E7C4A700CF090A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4145C01729E88109009EE45C /* Activity.swift in Sources */,
 				41BDB70D29E7C4A700CF090A /* ContentView.swift in Sources */,
 				41BDB70B29E7C4A700CF090A /* ghjkApp.swift in Sources */,
 			);
@@ -195,7 +217,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +271,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -270,6 +292,9 @@
 				DEVELOPMENT_TEAM = L4DK782D9T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ghjk/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +324,9 @@
 				DEVELOPMENT_TEAM = L4DK782D9T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ghjk/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +367,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4145C01029E87F05009EE45C /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/ActivityIndicatorView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		4145C01329E87F21009EE45C /* XCRemoteSwiftPackageReference "SwiftSpeech" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Cay-Zhang/SwiftSpeech#getting-started";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		41BDB73C29E7CAE300CF090A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4145C01129E87F05009EE45C /* ActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4145C01029E87F05009EE45C /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */;
+			productName = ActivityIndicatorView;
+		};
+		4145C01429E87F21009EE45C /* SwiftSpeech */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4145C01329E87F21009EE45C /* XCRemoteSwiftPackageReference "SwiftSpeech" */;
+			productName = SwiftSpeech;
+		};
+		41BDB73D29E7CAE300CF090A /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41BDB73C29E7CAE300CF090A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 41BDB6FF29E7C4A700CF090A /* Project object */;
 }
